@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    .myDiv {
+        font-weight: bold;
+        background-color: lightblue;
+      }
+      </style>
+
+    <script>
+        function myFunction()
+        {
+        var numOne, numTwo, sum;
+        numOne = parseInt(document.getElementById("x").value);
+        numTwo = parseInt(document.getElementById("y").value);
+        sum = numOne + numTwo;
+        document.getElementById("answer").value = sum;
+    }
+    </script>
+</head>
+
+<body>
+
+        <div style="padding:30px" class="myDiv"> X <input id="x" type="number"> </div>
+
+
+
+        <div style="padding:30px" class="myDiv"> Y <input id="y" type="number"> </div>
+
+
+        <button style="padding: 10px" onclick="myFunction()">ENTER</button>
+
+
+        <div style="padding:30px" class="myDiv"> sum = <input disabled id="answer"> </div>
+
+
+</body>
+
+</html>
