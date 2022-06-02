@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <script>
+        var numbers = [10, 2, 8, 7, -1];
+        for (let j=1; j<numbers.length; j++) {
+        for (let i = 0; i < numbers.length; i++) {
+            if (numbers[i] > numbers[i + 1]) {
+                var new1 = numbers[i];
+                var new2 = numbers[i + 1];
+                numbers[i] = new2;
+                numbers[i + 1] = new1;
+            }
+            else;
+        }
+    }
+        document.write(numbers);
+
+
+
+
+
+    </script>
+</body>
+
+</html>
